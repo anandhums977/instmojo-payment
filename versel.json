@@ -2,18 +2,17 @@
     "version": 2,
     "builds": [
       {
-        "src": "instamojo_payment/wsgi.py",
+        "src": "manage.py",
         "use": "@vercel/python",
         "config": {
-            "pythonVersion": "3.9",
-            "maxLambdaSize": "15mb"
-          }
+          "pythonVersion": "3.9"
+        }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "instamojo_payment/wsgi.py"
+        "dest": "manage.py"
       }
     ]
   }
