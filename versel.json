@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "manage.py",
@@ -9,12 +8,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/manage.py"
+      "dest": "manage.py"
     }
-  ],
-  "build": {
-    "env": {
-      "PYTHON_VERSION": "3.9"
-    }
-  }
+  ]
 }
