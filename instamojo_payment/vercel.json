@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "instamojo_payment/wsgi.py"
+    }
+  ]
+}
